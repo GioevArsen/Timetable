@@ -13,17 +13,20 @@ namespace Timetable
     public partial class FormTimetable : Form
     {
         string[] raspisanie = { "", "", "", "", "", "", "" };
-        
+        string[] days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+        string[] lectures = { "3 пары", "3 пары", "4 пары", "4 пары", "3 пары", "1 пара", "Выходной" };
+
         public FormTimetable()
         {
             InitializeComponent();
         }
 
+
         private void checkBoxMonday_CheckedChanged(object sender, EventArgs e)
         {
             if (raspisanie[0] == "")
             {
-                raspisanie[0] = "Понедельник - 3 пары"; ;
+                raspisanie[0] = days[0] + " - " + lectures[0];
             }
             else
             {
@@ -35,7 +38,7 @@ namespace Timetable
         {
             if (raspisanie[1] == "")
             {
-                raspisanie[1] = "Вторник - 3 пары";
+                raspisanie[1] = days[1] + " - " + lectures[1];
             }
             else
             {
@@ -47,7 +50,7 @@ namespace Timetable
         {
             if (raspisanie[2] == "")
             {
-                raspisanie[2] = "Среда - 4 пары";
+                raspisanie[2] = days[2] + " - " + lectures[2];
             }
             else
             {
@@ -59,7 +62,7 @@ namespace Timetable
         {
             if (raspisanie[3] == "")
             {
-                raspisanie[3] = "Четверг - 4 пары";
+                raspisanie[3] = days[3] + " - " + lectures[3];
             }
             else
             {
@@ -71,7 +74,7 @@ namespace Timetable
         {
             if (raspisanie[4] == "")
             {
-                raspisanie[4] = "Пятница - 3 пары";
+                raspisanie[4] = days[4] + " - " + lectures[4];
             }
             else
             {
@@ -83,7 +86,7 @@ namespace Timetable
         {
             if (raspisanie[5] == "")
             {
-                raspisanie[5] = "Суббота - 1 пара";
+                raspisanie[5] = days[5] + " - " + lectures[5];
             }
             else
             {
@@ -95,7 +98,7 @@ namespace Timetable
         {
             if (raspisanie[6] == "")
             {
-                raspisanie[6] = "Воскресенье - выходной";
+                raspisanie[6] = days[6] + " - " + lectures[6];
             }
             else
             {
